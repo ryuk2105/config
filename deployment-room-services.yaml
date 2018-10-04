@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: room-services
-          image: ryuk2105/room-services
+          image: ryuk2105/room-service
           ports:
             - name: http
               containerPort: 8001
