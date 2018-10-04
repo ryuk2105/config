@@ -1,23 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: room-services
+  name: room-service
 spec:
   selector:
       matchLabels:
-        app: room-services
+        app: room-service
         tier: backend
         track: stable
   replicas: 2
   template:
     metadata:
       labels:
-        app: room-services
+        app: room-service
         tier: backend
         track: stable        
     spec:
       containers:
-        - name: room-services
+        - name: room-service
           image: ryuk2105/room-service
           ports:
             - name: http
