@@ -6,15 +6,11 @@ spec:
   selector:
       matchLabels:
         app: reservation-business-services
-        tier: backend
-        track: stable
   replicas: 2
   template:
     metadata:
       labels:
         app: reservation-business-services
-        tier: backend
-        track: stable        
     spec:
       containers:
         - name: reservation-business-services
