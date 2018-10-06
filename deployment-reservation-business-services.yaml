@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: reservation-business-services
+spec:
+  selector:
+      matchLabels:
+        app: reservation-business-services
+        tier: backend
+        track: stable
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: reservation-business-services
+        tier: backend
+        track: stable        
+    spec:
+      containers:
+        - name: reservation-business-services
+          image: ryuk2105/reservation-business-services
+          ports:
+            - name: http
+              containerPort: 8004
