@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: reservation-busines-services
+spec:
+  selector:
+      app: reservation-busines-services
+  ports:
+    - port: 80
+      targetPort: 8004
+  type: LoadBalancer
