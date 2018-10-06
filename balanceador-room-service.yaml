@@ -1,10 +1,10 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: reservation-busines-services
+  name: reservation-business-services
 spec:
   selector:
-      app: reservation-busines-services
+      app: reservation-business-services
   ports:
     - port: 80
       targetPort: 8004
