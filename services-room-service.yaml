@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: room-service
+spec:
+  selector:
+     app: room-service
+  ports:
+   - protocol: TCP
+     port: 8001
+     targetPort: http
