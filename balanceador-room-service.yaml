@@ -6,6 +6,6 @@ spec:
   selector:
       app: reservation-busines-services
   ports:
-    - ports: 80
+    - port: 80
       targetPort: 8004
   type: LoadBalancer
